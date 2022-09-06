@@ -44,7 +44,7 @@ app.get("/", function (req, res, next) {
   }
 });
 
-const port = 5999;
+const port = 80;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
