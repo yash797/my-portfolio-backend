@@ -15,7 +15,7 @@ app.use(
 app.use(
   session({
     // It holds the secret key for session
-    secret: "yashande",
+    secret: "yashpande",
 
     // Forces the session to be saved
     // back to the session store
@@ -44,7 +44,7 @@ app.get("/", function (req, res, next) {
   }
 });
 
-const port = 80;
+const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
