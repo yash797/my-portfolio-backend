@@ -47,7 +47,6 @@ app.get("/", function (req, res, next) {
 const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
 app.listen(port, function (err) {
   if (err) {
